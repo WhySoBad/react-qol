@@ -7,7 +7,7 @@ const Button = forwardRef((props, ref) => {
   const { href, to, children, className, ...rest } = props;
   if (href || to) {
     return (
-      <button className={cx(className, style.button)}>
+      <button className={style.button}>
         <Link ref={ref} {...props}>
           {children}
         </Link>

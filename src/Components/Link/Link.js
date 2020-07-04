@@ -42,13 +42,7 @@ const Link = forwardRef((props, ref) => {
   }
 
   if (!onClick) {
-    return (
-      <InternalLink
-        ref={ref}
-        className={cx(className, style.link)}
-        {...props}
-      />
-    );
+    return <InternalLink ref={ref} className={style.link} {...props} />;
   }
 
   return (

@@ -1,6 +1,6 @@
 {
   "name": "react-qol",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A npm package simplifying often used react components to improve the quality of life when using react.",
   "author": "WhySoBad",
   "license": "MIT",
