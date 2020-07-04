@@ -1,6 +1,4 @@
-import React from 'react'
-import styles from './styles.module.css'
-
-export const ExampleComponent = ({ text }) => {
-  return <div className={styles.test}>Example Component: {text}</div>
-}
+export { default as Link } from './Components/Link';
+export { default as Square } from './Components/Square';
+export { default as Button } from './Components/Button';
+export { default as Icon, addIcon } from './Components/Icon';

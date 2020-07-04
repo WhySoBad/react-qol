@@ -1,7 +1,7 @@
 {
   "name": "react-qol",
   "version": "1.0.0",
-  "description": "insert description",
+  "description": "A npm package simplifying often used react components to improve the quality of life when using react.",
   "author": "WhySoBad",
   "license": "MIT",
   "repository": "WhySoBad/react-qol",
@@ -49,5 +49,12 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "browserify-fs": "^1.0.0",
+    "classnames": "^2.2.6",
+    "fs": "0.0.1-security",
+    "mkdirp": "^1.0.4",
+    "path": "^0.12.7"
+  }
 }

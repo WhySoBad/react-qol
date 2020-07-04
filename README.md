@@ -12,17 +12,58 @@ npm install --save react-qol
 
 ## Usage
 
+### Square
+
 ```jsx
-import React, { Component } from 'react'
+import React from 'react';
+import { Square as SquareTemplate } from 'react-qol';
 
-import MyComponent from 'react-qol'
-import 'react-qol/dist/index.css'
+const Square = (props) => {
+  return <SquareTemplate {...props} />; //returns a square based on width
+};
+```
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
+### Link
+
+```jsx
+import React from 'react';
+import { Link } from 'react-qol';
+
+const InternalLink = (props) => {
+  return <Link to={'/home'} {...props} />; //returns an internal link [e.g. home]
+};
+
+const ExternalLink = (props) => {
+  return <Link href={'https://www.google.com/'} {...props} />; //returns an external link [e.g. https://www.google.com/]
+};
+```
+
+### Button
+
+```jsx
+import React from 'react';
+import { Button as ButtonTemplate } from 'react-qol';
+
+const LinkButton = (props) => {
+  return <ButtonTemplate to={'/home'} {...props} />; //returns a button working as a link [see "Link"]
+};
+
+const Button = (props) => {
+  return <ButtonTemplate {...props} />; //returns a button working as a button [e.g. onClick]
+};
+```
+
+### Icon
+
+```jsx
+import React from 'react';
+import { Icon as IconTemplate, addIcon } from 'react-qol';
+import { ReactComponent as SVGLogo } from './logo.svg';
+
+const Icon = (props) => {
+  addIcon('SVGLogo', SVGLogo);
+  return <IconTemplate name={'SVGLogo'} />; //returns a simple svg icon surrounded by a div
+};
 ```
 
 ## License

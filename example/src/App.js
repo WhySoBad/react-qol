@@ -1,10 +1,20 @@
-import React from 'react'
-
-import { ExampleComponent } from 'react-qol'
-import 'react-qol/dist/index.css'
+import React from 'react';
+import { ReactComponent as Logo } from './logo.svg';
+import { Button, Square, Link, Icon, addIcon } from 'react-qol';
+import 'react-qol/dist/index.css';
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
-}
+  addIcon('Logo', Logo);
+  return (
+    <>
+      <Button href={'https://www.youtube.com/'}>Hi</Button>
+      <div style={{ maxWidth: '100px', height: '50vh' }}>
+        <Square style={{ backgroundColor: 'red' }}>
+          <Icon name={'logo'} />
+        </Square>
+      </div>
+    </>
+  );
+};
 
-export default App
+export default App;
