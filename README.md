@@ -1,6 +1,6 @@
 # react-qol
 
-> A npm package simplifying often used react components to improve the quality of life when using react.;
+> A npm package simplifying often used react components to improve the quality of life when using react.
 
 [![NPM](https://img.shields.io/npm/v/react-qol.svg)](https://www.npmjs.com/package/react-qol) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
